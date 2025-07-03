@@ -54,7 +54,7 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
 1. Endpoint **POST /expenses**
 2. Request Body
    ```
-     {
+   {
       "description": "Lunch",
       "amount": 10.00,
       "category": "FOOD",
@@ -101,4 +101,4 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
    ```
    https://localhost:8080/expenses/summary?year=2025&month=06
    ```
-w
+
