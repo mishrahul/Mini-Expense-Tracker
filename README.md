@@ -46,7 +46,7 @@ it provides RESTful APIs for interacting with expense data.
     mvn spring-boot:run
     ```
 
-The applicatiion runs on the post **8080** by default and can be accessed at **https://localhost:8080**
+The applicatiion runs on the port **8080** by default and can be accessed at **https://localhost:8080**
 
 
 ## API Endpoints
@@ -81,10 +81,12 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
 2. Request parametes
 
    **from** : Date in the standard ISO 8016 format (*e.g. yyyy-MM-dd*)
+
    **to** : Date in standard ISO 8061 format
+
    **category** : Capitalized expense category (*e.g. GROCERY, FOOD, MEDICAL, TRAVEL*)
    
-3. Example URL
+4. Example URL
    ```
    https://localhost:8080/expenses?from=yyyy-MM-dd&to=yyyy-MM-dd&category=FOOD
    ```
@@ -95,9 +97,10 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
 2. Request parrameters
 
    **year** : The year for the summary
+
    **month** : The month for the summary
 
-3. Example URL
+4. Example URL
    ```
    https://localhost:8080/expenses/summary?year=2025&month=06
    ```
