@@ -76,9 +76,9 @@ The applicatiion runs on the port **8080** by default and can be accessed at **h
    ```
 
 ### To retrieve expense data between two dates for a particular category
-1. Endpoint: **GET /expenses**
+1. Endpoint: **z /expenses**
 
-2. Request parametes
+2. Request parameters
 
    **from** : Date in the standard ISO 8016 format (*e.g. yyyy-MM-dd*)
 
