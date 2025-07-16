@@ -46,7 +46,11 @@ it provides RESTful APIs for interacting with expense data.
     mvn spring-boot:run
     ```
 
+<<<<<<< HEAD
 The applicatiion runs on the post **8080** by default and can be accessed at **https://localhost:8080**
+=======
+The applicatiion runs on the port **8080** by default and can be accessed at **https://localhost:8080**
+>>>>>>> eae62f8f331c8f1a376c6ad85a752ffadd501b38
 
 
 ## API Endpoints
@@ -76,6 +80,7 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
    ```
 
 ### To retrieve expense data between two dates for a particular category
+<<<<<<< HEAD
 1. Endpoint: **GET /expenses**
 
 2. Request parametes
@@ -85,6 +90,19 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
    **category** : Capitalized expense category (*e.g. GROCERY, FOOD, MEDICAL, TRAVEL*)
    
 3. Example URL
+=======
+1. Endpoint: **z /expenses**
+
+2. Request parameters
+
+   **from** : Date in the standard ISO 8016 format (*e.g. yyyy-MM-dd*)
+
+   **to** : Date in standard ISO 8061 format
+
+   **category** : Capitalized expense category (*e.g. GROCERY, FOOD, MEDICAL, TRAVEL*)
+   
+4. Example URL
+>>>>>>> eae62f8f331c8f1a376c6ad85a752ffadd501b38
    ```
    https://localhost:8080/expenses?from=yyyy-MM-dd&to=yyyy-MM-dd&category=FOOD
    ```
@@ -95,9 +113,16 @@ The applicatiion runs on the post **8080** by default and can be accessed at **h
 2. Request parrameters
 
    **year** : The year for the summary
+<<<<<<< HEAD
    **month** : The month for the summary
 
 3. Example URL
+=======
+
+   **month** : The month for the summary
+
+4. Example URL
+>>>>>>> eae62f8f331c8f1a376c6ad85a752ffadd501b38
    ```
    https://localhost:8080/expenses/summary?year=2025&month=06
    ```
