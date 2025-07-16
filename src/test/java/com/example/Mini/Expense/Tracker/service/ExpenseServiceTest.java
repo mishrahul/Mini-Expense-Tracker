@@ -209,9 +209,6 @@ public class ExpenseServiceTest {
         assertEquals(expectedList.get(2).getCategory(), actual.get(2).getCategory());
         assertEquals(expectedList.get(2).getSum(), actual.get(2).getSum());
 
-
-
-
     }
 
 

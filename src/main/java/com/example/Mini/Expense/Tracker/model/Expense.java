@@ -47,6 +47,7 @@ public class Expense {
     }
 
 
+
     //  public Expense(long id, String description, BigDecimal amount, Object o, ExpenseCategory category, LocalDate date) {
     //}
 }

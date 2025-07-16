@@ -46,7 +46,7 @@ public class ExpenseService {
                 //(ExpenseDto) repository.findById(id).orElse(new Expense());
     }
 
-    private ExpenseDto mapDto(Expense expense) {
+    public ExpenseDto mapDto(Expense expense) {
 
         return new ExpenseDto(expense.getId(), expense.getDescription(), expense.getAmount(),
                             expense.getCategory(), expense.getDate());

@@ -29,7 +29,7 @@ public interface ExpenseRepository extends JpaRepository<Expense, Long> {
 
     @Query(value = "SELECT category, SUM(amount) as total " +
             "FROM expenses " +
-            "WHERE YEAR(date) = :year AND MONTH(date) = :month " +
+            "WHERE EXTRACT(YEAR FROM date) = :year AND EXTRACT(MONTH FROM date) = :month " +
             "GROUP BY category", nativeQuery = true
     )
     List<Object[]> categorySum(@Param("year") int year, @Param("month") int month);

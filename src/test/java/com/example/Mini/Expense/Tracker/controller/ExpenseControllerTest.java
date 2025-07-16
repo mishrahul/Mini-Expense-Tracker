@@ -53,13 +53,12 @@ public class ExpenseControllerTest {
         expenseDto = new ExpenseDto(1L, "Travelling",
                                     new BigDecimal(250.75), ExpenseCategory.TRAVEL,
                                     LocalDate.of(2024, 02, 13));
-
     }
 
 
 
     @Test
-    void testCreateExpenseTest() throws Exception {
+    void testCreateExpense() throws Exception {
         when(expenseService.save(any(ExpenseDto.class))).thenReturn(expenseDto);
 
         mockMvc.perform(post("/expenses")
@@ -180,7 +179,6 @@ public class ExpenseControllerTest {
                 .andExpect(jsonPath("$[1].description").value("Electronic equipments"))
                 .andExpect(jsonPath("$[0].amount").value(250.75))
                 .andExpect(jsonPath("$[1].amount").value(125.99));
-
 
         verify(expenseService, times(1)).filteredSearch(from, to, category);
     }
