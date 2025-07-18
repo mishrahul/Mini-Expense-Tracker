@@ -46,11 +46,8 @@ it provides RESTful APIs for interacting with expense data.
     mvn spring-boot:run
     ```
 
-<<<<<<< HEAD
 The applicatiion runs on the post **8080** by default and can be accessed at **https://localhost:8080**
-=======
-The applicatiion runs on the port **8080** by default and can be accessed at **https://localhost:8080**
->>>>>>> eae62f8f331c8f1a376c6ad85a752ffadd501b38
+
 
 
 ## API Endpoints
